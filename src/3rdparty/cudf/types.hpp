@@ -16,13 +16,16 @@
 
 #pragma once
 
-#ifdef __CUDACC__
+//#ifdef __CUDACC__
+//#define CUDA_HOST_DEVICE_CALLABLE __host__ __device__ inline
+//#define CUDA_DEVICE_CALLABLE __device__ inline
+//#else
+//#define CUDA_HOST_DEVICE_CALLABLE inline
+//#define CUDA_DEVICE_CALLABLE inline
+//#endif
+
 #define CUDA_HOST_DEVICE_CALLABLE __host__ __device__ inline
 #define CUDA_DEVICE_CALLABLE __device__ inline
-#else
-#define CUDA_HOST_DEVICE_CALLABLE inline
-#define CUDA_DEVICE_CALLABLE inline
-#endif
 
 #include <cstddef>
 #include <cstdint>

@@ -163,7 +163,6 @@ private:
 #ifdef __CUDACC__
 #define MINK_CUDA_HOST_DEVICE __host__ __device__
 #define MINK_CUDA_DEVICE __device__
-#error "__CUDACC__ is not defined! CUDA compilation failed or CUDA is not available. Please check your environment and ensure nvcc is used."
 #else
 #define MINK_CUDA_HOST_DEVICE
 #define MINK_CUDA_DEVICE

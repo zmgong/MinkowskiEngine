@@ -27,6 +27,9 @@
 #ifndef REGION
 #define REGION
 
+#define MINK_CUDA_HOST_DEVICE __host__ __device__
+#define MINK_CUDA_DEVICE __device__
+
 #include <algorithm>
 #include <cstdlib>
 #include <functional>
